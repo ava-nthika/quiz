@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Leaderboard</h2>
+<ol>
+    {% for leader in leaders %}
+        <li>{{ leader.username }} - {{ leader.score }}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
